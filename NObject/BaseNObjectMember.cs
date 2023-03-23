@@ -43,7 +43,7 @@ public class BaseNObjectMember : MonoBehaviour
     //Interaction function with the database (trees)
     public void Damage(float damage, GameObject instigator, BaseDamageType type)
     {
-        BaseNObjectManager.Instance.OnDamageMember(memberID, damage, instigator, type);
+        BaseNObjectManager.Instance.DamageMember(memberID, damage, instigator, type);
     }
 }
 

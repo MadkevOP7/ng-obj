@@ -6,6 +6,9 @@ using System;
 [Serializable]
 public class BaseNObjectData //The main data that will get serialized/de-serialized
 {
+    [SerializeField]
+    public int versionNumber = 1;
+
     [SerializeReference]
     public BaseNObjectMemberData[] data;
 }
